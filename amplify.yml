@@ -12,7 +12,8 @@ frontend:
         - ng build -c ${AWS_BRANCH}
   artifacts:
     baseDirectory: dist/FrontEnd/browser
-      - "/*"
+    files:
+      - "**/*"
   cache:
     paths:
-      - node_modules//*
+      - node_modules/**/*
